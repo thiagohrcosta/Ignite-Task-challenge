@@ -78,7 +78,7 @@ app.put('/todos/:id',checksExistsUserAccount, (request, response) => {
 
   if(!todo) {
     return response.status(404).json({
-      error: "To Do not found!"
+      error: "Todo not found!"
     });
   }
 
@@ -97,7 +97,7 @@ app.patch('/todos/:id/done',checksExistsUserAccount , (request, response) => {
 
   if(!todo) {
     return response.status(404).json({
-      error: "To Do not found!"
+      error: "Todo not found!"
     });
   }
 
